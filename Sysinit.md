@@ -1,10 +1,10 @@
 ### 1. 系统初始
-centos 7
+1.1 系统centos 7 软件安装
 ```
 yum -y install epel-release
 yum update -y
 yum groupinstall 'Development Tools' -y 
-yum -y install htop redhat-lsb vim lrzsz rsync git wget supervisor openvpn nload
+yum -y install htop redhat-lsb vim lrzsz rsync git wget nload
 ```
 
 ### 2. docker部署
