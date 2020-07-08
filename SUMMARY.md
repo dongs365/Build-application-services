@@ -17,7 +17,7 @@
   * [gitlab](book/gitlab.md)
   * [nexus](book/nexus.md)
 * [监控系统]
-  * [prometheus](prometheus.md)
+  * [prometheus](book/prometheus.md)
 * [远程系统]
   * [openvpn](book/openvpn.md)
   * [shadowsocks](book/shadowsocks.md)
