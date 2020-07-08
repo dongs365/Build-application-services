@@ -14,10 +14,10 @@ curl -fsSL https://get.docker.com | bash -s docker --mirror Aliyun
 ```
 2.2 添加阿里云docker加速仓库
 ```
-sudo mkdir -p /etc/docker
-sudo tee /etc/docker/daemon.json <<-'EOF'
+mkdir -p /etc/docker
+tee /etc/docker/daemon.json <<-'EOF'
 {
-  "registry-mirrors": ["https://wwecbrfv.mirror.aliyuncs.com"]
+  "registry-mirrors": ["https://am3hfczx.mirror.aliyuncs.com"]
 }
 EOF
 sudo systemctl daemon-reload
