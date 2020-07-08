@@ -1,5 +1,3 @@
-## 10、质量系统
-
 ### SonarQube部署
 ## postgresql 数据库
 ```
