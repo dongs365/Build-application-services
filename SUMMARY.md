@@ -1,8 +1,8 @@
 * [项目介绍](README.md)
 * [项目拓扑](book/architecture.md)
 * [系统初始](book/sysinit.md)
-* [统一认证]
-  * [ldap服务器](book/ldap.md)
+* [统一认证](book/TYRZ_README.md)
+  * [ldap服务](book/ldap.md)
   * [ldap管理](book/lam.md)
 * [工单系统]
   * [jira](book/jira.md)
