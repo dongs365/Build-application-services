@@ -1,28 +1,3 @@
-## 6、代码仓库
-### gogs 部署
-#### 部署mysql
-```
-run --name mysql5.7 -p 3306:3306 -e MYSQL_ROOT_PASSWORD=123456 -d mysql:5.7
-```
-#### 创建数据库
-```
-CREATE DATABASE `gogs` CHARACTER SET utf8 COLLATE utf8_general_ci;
-```
-#### 部署gogs
-```
-docker run -d --name=mygogs -p 10022:22 -p 3000:3000 -v /var/gogs:/data gogs/gogs
-```
-
-登陆配置 IP:3000
-#### gogs 非root用户启用 1024 以下端口
-##### 添加附加权限
-setcap 'cap_net_bind_service=+ep' /home/gogs/gogs/gogs
-##### 查看附加权限
-getcap gogs
-##### 清除附加权限
-setcap -r
-
-
 ### 部署gitlab
 ```
 docker run \
@@ -64,24 +39,3 @@ gitlab-ctl reconfigure
 gitlab-ctl restart
 ```
 
-
-### 部署nexus3
-chown 200 /data/local/nexus3/nexus-data
-```
-docker run -tid -p 8081:8081 --name nexus --restart=always -e NEXUS_CONTEXT=nexus -v /data/local/nexus3/nexus-data:/nexus-data  sonatype/nexus3
-```
-### 部署nexus2
-```
-docker run -tid -p 8081:8081 --name nexus2 --restart=always -e CONTEXT_PATH="" -v /data/local/nexus2/sonatype-work:/sonatype-work sonatype/nexus
-```
-#### 手动索引更新nexus2
-nexus-maven-repository-index.gz
-nexus-maven-repository-index.properties
-indexer-cli-X.0.0.jar
-
-https://mvnrepository.com/artifact/org.apache.maven.indexer/indexer-cli
-http://repo1.maven.org/maven2/.index/
-
-java -jar indexer-cli-5.1.1.jar -u nexus-maven-repository-index.gz -d indexer
-
-然后indexer内的文件拷贝到私服{nexus-home}/sonatype-work/nexus/indexer/central-ctx目录下，重新启动nexus，索引更新完毕

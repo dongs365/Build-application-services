@@ -1,4 +1,3 @@
-## 8、远程系统
 #### openvpn 一键安装脚本
 ```
 https://github.com/Nyr/openvpn-install
@@ -115,59 +114,3 @@ stdout_logfile_backups = 20
 stdout_logfile = /var/log/supervisor/dsvpn.log
 ```
 
-
-### shadowsocks
-```
-docker run \
-    -d \
-    -p 8388:8388 \
-    --restart=always \
-    oddrationale/docker-shadowsocks \
-    -s 0.0.0.0 \
-    -p 8388 \
-    -k mx*hu9PD \
-    -m aes-256-cfb
-```
-
-####  v2ray 一键安装脚本
-```
-bash <(curl -s -L https://git.io/v2ray.sh)
-```
-
-####  v2ray 容器部署
-```
-docker run \
-    -d \
-    --name v2ray \
-    --restart always \
-    -p 1747:1747 \
-    -v /etc/localtime:/etc/localtime \
-    v2ray/official
-```
-#### 配置文件
-```
-vim ~/v2ray/config.json
-```
-
-### squid http代理
-```
-docker run -d -p 3128:3128 minimum2scp/squid
-```
-#### 修改配置文件
-```
-http_access allow all
-```
-#### 本地使用
-```
-export http_proxy=http://127.0.0.1:3128
-curl http://example.com/
-```
-
-### tinyproxy http代理
-```
-端口映射为7777：8888
-ANY的意思是所有IP都可以建立连接
-```
-```
-docker run -d --name='tinyproxy' -p 7777:8888 endoffight/tinyproxy ANY
-```
