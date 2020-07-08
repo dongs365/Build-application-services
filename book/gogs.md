@@ -1,7 +1,7 @@
 ### gogs 部署
 #### 部署mysql
 ```
-run --name mysql5.7 -p 3306:3306 -e MYSQL_ROOT_PASSWORD=123456 -d mysql:5.7
+docker run --name mysql5.7 -p 3306:3306 -e MYSQL_ROOT_PASSWORD=123456 -d mysql:5.7
 ```
 #### 创建数据库
 ```

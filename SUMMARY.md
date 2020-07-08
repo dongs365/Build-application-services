@@ -27,7 +27,7 @@
 * [容器系统]
   * [harbor](book/harbor.md)
   * [portainer](book/portainer.md)
-  * [Kubernetes](book/Kubernetes.md)
+  * [kubernetes](book/kubernetes.md)
 * [质量系统]
   * [sonarqube](book/sonarqube.md)
 * [运维系统]
