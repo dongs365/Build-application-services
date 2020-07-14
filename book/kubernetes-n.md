@@ -37,7 +37,7 @@ cat > /etc/docker/daemon.json <<EOF
   "storage-driver": "overlay2"
 }
 {
-   "registry-mirrors": ["https://wwecbrfv.mirror.aliyuncs.com"]
+   "registry-mirrors": ["https://am3hfczx.mirror.aliyuncs.com"]
 }
 EOF
 systemctl daemon-reload
