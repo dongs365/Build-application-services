@@ -28,6 +28,7 @@
   * [harbor](book/harbor.md)
   * [portainer](book/portainer.md)
   * [kubernetes](book/kubernetes.md)
+  * [kubernetes内](book/kubernetes-n.md)
 * [质量系统]
   * [sonarqube](book/sonarqube.md)
 * [运维系统]

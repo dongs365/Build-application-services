@@ -4,7 +4,7 @@ unset msg
 #read -p "请输入commit提交的描述: " msg
 msg=:memo:
 git add -A
-git commit -m $msg
+git commit -m "$msg`date`"
 git push
 git status
 
