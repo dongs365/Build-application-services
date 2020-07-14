@@ -1,10 +1,10 @@
 ## 9.2 kubernetes -内网
 ### 部署环境
-|名称|系统|类别|ip|name|
-|:-:|:-:|:-:|:-:|:-:|
-|master|centos|主节点|10.10.10.115|tmp-1|
-|node1|centos|从节点|10.10.10.89|tmp-2|
-|node2|centos|从节点|10.10.10.90|tmp-3|
+|名称|系统|类别|
+|:-:|:-:|:-:|
+|master|centos|主节点|
+|node1|centos|从节点|
+|node2|centos|从节点|
 
 ### docker 安装
 ```
