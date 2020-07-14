@@ -69,6 +69,6 @@ kubeadm join xxxxxxxxxxxxxxxxxxxxxxx
 ```
 #### 常用命令
 ```
-kubectl get node  # 查看节点
-kubectl get node  # 查看pod
+kubectl get nodes  # 查看节点
+kubectl get pods  # 查看pod
 ```
