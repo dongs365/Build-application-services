@@ -34,10 +34,8 @@ cat > /etc/docker/daemon.json <<EOF
   "log-opts": {
     "max-size": "100m"
   },
-  "storage-driver": "overlay2"
-}
-{
-   "registry-mirrors": ["https://am3hfczx.mirror.aliyuncs.com"]
+  "storage-driver": "overlay2",
+  "registry-mirrors": ["https://am3hfczx.mirror.aliyuncs.com"]
 }
 EOF
 systemctl daemon-reload
