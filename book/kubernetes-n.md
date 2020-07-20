@@ -82,7 +82,7 @@ kubectl apply -f https://docs.projectcalico.org/manifests/calico.yaml
 ```
 kubeadm join xxxxxxxxxxxxxxxxxxxxxxx 
 ```
-#### 命令行界面
+#### 第三方命令行监控
 ```
 curl -Lo kubebox https://github.com/astefanutti/kubebox/releases/download/v0.8.0/kubebox-linux && chmod +x kubebox
 ```
