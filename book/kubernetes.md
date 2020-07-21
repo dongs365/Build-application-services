@@ -96,6 +96,7 @@ kubectl apply -f recommended.yaml
 
 ##### 创建用户文件 user.yaml
 ```
+---
 apiVersion: v1
 kind: ServiceAccount
 metadata:
