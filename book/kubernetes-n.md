@@ -59,7 +59,7 @@ sed -i 's/.*swap.*/#&/' /etc/fstab
 ### kubernetes安装部署
 #### pull 镜像 master节点和node节点操作
 ```
-curl https://raw.githubusercontent.com/dongs365/docker-images/master/pull.sh|bash
+curl https://raw.githubusercontent.com/dongs365/docker-images/master/pull_image.sh|bash
 ```
 
 #### 初始化 master主节点操作 (记录输出的kubeadm join xxxxxxxx)
