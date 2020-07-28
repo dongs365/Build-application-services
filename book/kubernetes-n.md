@@ -55,6 +55,20 @@ sed -i "s/^SELINUX=enforcing/SELINUX=disabled/g" /etc/selinux/config
 swapoff -a
 sed -i 's/.*swap.*/#&/' /etc/fstab
 ```
+### 网络桥接配置
+```
+确保br_netfilter已加载模块。
+lsmod|grep br_netfilter
+```
+
+```
+cat <<EOF | sudo tee /etc/sysctl.d/k8s.conf
+net.bridge.bridge-nf-call-ip6tables = 1
+net.bridge.bridge-nf-call-iptables = 1
+EOF
+sudo sysctl --system
+```
+
 
 ### kubernetes安装部署
 #### pull 镜像 master节点和node节点操作
