@@ -25,7 +25,7 @@ docker run \
     jenkinsci/jnlp-slave:latest \
     -url https://jenkins.mooom.top 1qa2ws3ed4rf5tg6yh7uj8ik9ol0p1qa2ws3ed4rf5tg6yh7uj8ik9ol0p slave4
 ```
-
+启动容器
 ```
 docker run \
     -d  \
