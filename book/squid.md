@@ -1,4 +1,5 @@
 ### squid部署 http代理
+启动容器
 ```
 docker run -d -p 3128:3128 minimum2scp/squid
 ```
