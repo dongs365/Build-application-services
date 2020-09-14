@@ -2,11 +2,13 @@
 启动容器
 ```
 docker run \
+    -d \
+    --restart=always \
     --publish 443:443 --publish 80:80 --publish 22:22 \
     --name gitlab \
-    --volume /u1/gitlab/config:/etc/gitlab \
-    --volume /u1/gitlab/logs:/var/log/gitlab \
-    --volume /u1/gitlab/data:/var/opt/gitlab \
+    --volume /data/gitlab/config:/etc/gitlab \
+    --volume /data/gitlab/logs:/var/log/gitlab \
+    --volume /data/gitlab/data:/var/opt/gitlab \
     gitlab/gitlab-ce
 ```
 #### 自定义标记labels，添加即可
