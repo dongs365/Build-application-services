@@ -9,7 +9,7 @@ docker run \
     -d \
     --name v2ray \
     --restart always \
-    -p 1747:1747 \
+    -p 1747:8001 \
     -v /etc/localtime:/etc/localtime \
     v2ray/official
 ```
