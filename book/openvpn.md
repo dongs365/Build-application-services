@@ -113,8 +113,7 @@ stdout_logfile_maxbytes = 20MB
 stdout_logfile_backups = 20
 stdout_logfile = /var/log/supervisor/dsvpn.log
 ```
-#### 容器化
-##### 启动容器
+#### openvpn 容器部署
 ```
 docker run -d \
  --name=openvpn-as \
@@ -130,4 +129,5 @@ docker run -d \
  ghcr.io/linuxserver/openvpn-as
 
 ```
-默认账号密码admin/password
+web登录：https://127.0.0.1:943
+账号密码admin/password
